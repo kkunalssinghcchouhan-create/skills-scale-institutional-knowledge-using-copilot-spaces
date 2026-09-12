@@ -33,8 +33,38 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Level 2: PM escalates to Product Lead and dependent teams
 - Level 3: Sponsor-level escalation for business-impacting issues
 
+## Incident & Blocker Communication Protocol
+
+### Purpose
+Ensure timely, clear communication of execution blockers and maintain a searchable archive of incidents and resolutions.
+
+### Communication Channels by Severity
+- **Level 1 (Team Blocker)**: Mentioned in daily standup; logged in project board as blocked issue
+- **Level 2 (Cross-team Impact)**: Async notification in team Slack channel + @mention in GitHub issue; escalation email to PM and dependent team leads
+- **Level 3 (Business Impact)**: Real-time Slack/call with sponsor + documented in Risk Register; follow-up email summary within 24 hours
+
+### Incident Documentation Template
+When logging blockers or incidents, capture:
+- **Blocker ID**: Link to related GitHub issue
+- **Detection Timestamp**: When the blocker was first identified
+- **Description & Business Impact**: What is blocked and why it matters
+- **Affected Components/Teams**: Which systems and teams are impacted
+- **Root Cause**: Initial assessment (update as investigation progresses)
+- **Mitigation Steps & Timeline**: Actions being taken and expected resolution time
+- **Resolution & Lessons Learned**: How it was resolved and what to do differently next time
+
+### Tracking & Follow-up
+- All Level 2+ incidents must have a GitHub issue linked in the Risk Register
+- Weekly review of open blockers in delivery sync
+- Post-resolution: Document root cause and prevention steps in relevant process doc or team wiki
+- Incidents resolved in same sprint: Brief retrospective note added to sprint retrospective
+- Maintain a searchable incident log for organizational learning
+
 ## Execution Checklist
 - [ ] Branching and PR conventions documented in repo
 - [ ] CI configured for tests and lint
 - [ ] Regular demos scheduled
 - [ ] Risk register updated weekly
+- [ ] Incident/blocker communication channels defined and shared with team
+- [ ] Template for blocker documentation accessible in team wiki or GitHub repo
+- [ ] Process for post-incident documentation and process updates documented
